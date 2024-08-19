@@ -31,8 +31,7 @@ const theme = createTheme({
 		},
 		h5: {
 			fontFamily: '"RobotoSlab", sans-serif',
-			fontWeight: 900
-
+			fontWeight: 900,
 		},
 		body1: {
 			fontSize: "1rem",
@@ -40,8 +39,8 @@ const theme = createTheme({
 		headline: {
 			fontFamily: '"RobotoSlab", sans-serif',
 			fontSize: "5em",
-			fontWeight: 800
-		}
+			fontWeight: 800,
+		},
 	},
 	components: {
 		MuiButton: {
@@ -79,7 +78,7 @@ const theme = createTheme({
 							left: "4px",
 							width: "calc(100% - 1px)",
 							height: "calc(100% - 1px)",
-							transition: 'bottom 0.3s ease, left 0.3s ease'
+							transition: "bottom 0.3s ease, left 0.3s ease",
 						},
 						"&:hover:after": {
 							bottom: "2px",
@@ -90,6 +89,46 @@ const theme = createTheme({
 							fontSize: "1.25rem",
 						},
 					},
+				},
+				{
+					props: { variant: "underlined" },
+					style: {
+						color: "white",
+						fontSize: "1.25rem",
+						fontFamily: "RobotoSlab",
+						position: "relative",
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "center",
+						"& .MuiButton-endIcon": {
+						  transform: "translateX(0px)",
+						  transition: "transform 0.3s",
+						},
+						"&:hover .MuiButton-endIcon": {
+						  transform: "translateX(5px)",
+						  transition: "transform 0.3s",
+						},
+						"&::after": {
+						  content: '""',
+						  position: "absolute",
+						  width: "0%",
+						  height: "2px",
+						  bottom: "6px",
+						  left: "8px",
+						  backgroundColor: "#bf2626",
+						  transition: "width 0.3s ease",
+						  zIndex: '1'
+						},
+						"&:hover::after": {
+						  width: "92%",
+						},
+						"&:hover": {
+							backgroundColor: "#fdbd10"
+						},
+						"@media (min-width: 768px)": {
+						  fontSize: "2rem",
+						},
+					  },
 				},
 			],
 		},

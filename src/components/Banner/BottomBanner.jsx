@@ -19,7 +19,7 @@ const BottomBanner = () => {
 					justifyContent: "space-around",
 				}}
 			>
-				<Grid container justifyContent={{ xs: "center", md: "space-between" }} alignItems="center" rowSpacing={4} >
+				<Grid container justifyContent={{ xs: "center", md: "space-between" }} alignItems="center" rowSpacing={4} columnSpacing={4} >
 					<Grid item>
 						<Button
 							variant="underlined"

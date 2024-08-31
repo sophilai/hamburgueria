@@ -30,7 +30,14 @@ const Menu = () => {
 						backgroundSize: "auto 100%",
 						backgroundRepeat: "round",
 						backgroundPosition: "0em",
+						strokeWidth: "3px",
+						strokeDasharray: "1045",
+						animate: "fillAnimation 5s"
 					},
+					"@keyframes fillAnimation": {
+						strokeDashoffset: "1045",
+						"100%": { strokeDashoffset: "0" },
+					  },
 				}}
 			>
 				Cardápio

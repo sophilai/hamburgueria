@@ -5,8 +5,10 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./theme";
 
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 import HomePage from "./pages/HomePage";
+import Local from "./pages/Local";
 
 import "./assets/styles/fonts.css";
 
@@ -17,11 +19,12 @@ function App() {
 				<CssBaseline />
 				<Header />
 				<Router>
-					<Header />
 					<Routes>
 						<Route path="/" element={<HomePage />} />
+						<Route path="/localizacao" element={<Local />} />
 					</Routes>
 				</Router>
+				<Footer />
 			</ThemeProvider>
 		</>
 	);

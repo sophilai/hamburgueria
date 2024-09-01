@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 
 const navItems = [
 	{ pageName: "Cardápio", pageUrl: "#" },
-	{ pageName: "Localização", pageUrl: "#" },
+	{ pageName: "Localização", pageUrl: "/localizacao" },
 	{ pageName: "Delivery", pageUrl: "#" },
 ];
 
@@ -15,9 +15,12 @@ const Header = () => {
 	return (
 		<AppBar>
 			<Toolbar>
+				<Box href="/" component="a">
 				<Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block', textWrap: "nowrap" } }} >
 					Hamburgueria da Lane
 				</Typography>
+				</Box>
+
 				<Box display="flex" justifyContent={"flex-end"} sx={{ width: "100%" }}>
 					{navItems.map((item) => (
 						<Button

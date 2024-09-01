@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from '@mui/icons-material/Instagram';
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
 	return (
@@ -13,21 +13,27 @@ const Footer = () => {
 			}}
 		>
 			<Container>
-				<Grid container spacing={2} md={12} >
+				<Grid container spacing={2} md={12}>
 					<Grid item xs={12} md={4}>
 						<Box display="flex" flexDirection="column" gap="10px">
-							<Typography variant="h5">Coluna 1</Typography>
-							<Typography>Linha 1</Typography>
-							<Typography>Linha 2</Typography>
-							<Typography>Linha 3</Typography>
+							<Typography variant="h5">Horário</Typography>
+							<Typography>Segunda a Sexta: 18 às 22h</Typography>
+							<Typography>Sábado: 17h às 23h</Typography>
+							<Typography>Domingo: 12h às 23h</Typography>
 						</Box>
 					</Grid>
 					<Grid item xs={12} md={4}>
 						<Box display="flex" flexDirection="column" gap="10px">
-							<Typography variant="h5">Coluna 2</Typography>
-							<Typography>Linha 1</Typography>
-							<Typography>Linha 2</Typography>
-							<Typography>Linha 3</Typography>
+							<Box
+								component="a"
+								href="/localizacao"
+								sx={{ width: "fit-content" }}
+							>
+								<Typography variant="h5">Localização</Typography>
+							</Box>
+							<Typography>Rua Domingos Scarpel, 81 - Jardim Belem</Typography>
+							<Typography>Delivery ou Retirada</Typography>
+							<Typography>Estamos no Ifood</Typography>
 						</Box>
 					</Grid>
 					<Grid item xs={12} md={4}>
